@@ -1,0 +1,13 @@
+[package]
+name = "libfmutil"
+version = "0.1.0"
+authors = ["sceext <sceext@foxmail.com>"]
+edition = "2018"
+
+[features]
+default = ["libfmhal", "pid"]
+libfmhal = []
+pid = []
+
+[dependencies]
+libfmhal = { path = "../libfmhal.rs" }
