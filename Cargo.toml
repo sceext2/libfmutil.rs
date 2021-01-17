@@ -6,8 +6,7 @@ edition = "2018"
 
 [features]
 default = ["libfmhal", "pid"]
-libfmhal = []
 pid = []
 
 [dependencies]
-libfmhal = { path = "../libfmhal.rs" }
+libfmhal = { optional = true, path = "../libfmhal.rs" }
